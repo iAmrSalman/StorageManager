@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'StorageManager'
   s.version          = '0.1.0'
-  s.summary          = 'Safe and easy way to use FileManaer.'
+  s.summary          = 'Safe and easy way to use FileManager.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-FileManaer Api that handels Store, fetch, delete and update files on local storage desk.
+FileManager framework that handels Store, fetch, delete and update files in local storage.
                        DESC
 
   s.homepage         = 'https://github.com/iAmrSalman/StorageManager'
