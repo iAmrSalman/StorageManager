@@ -5,11 +5,17 @@
 [![License](https://img.shields.io/cocoapods/l/StorageManager.svg?style=flat)](http://cocoapods.org/pods/StorageManager)
 [![Platform](https://img.shields.io/cocoapods/p/StorageManager.svg?style=flat)](http://cocoapods.org/pods/StorageManager)
 
+FileManager framework that handels Store, fetch, delete and update files in local storage.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
+- iOS 10.0+
+- Xcode 8.0+
+- Swift 3.0+
 
 ## Installation
 
@@ -22,7 +28,7 @@ pod 'StorageManager'
 
 ## Author
 
-iAmrSalman, iamrsalman@gmail.com
+Amr Salman, iamrsalman@gmail.com
 
 ## License
 
