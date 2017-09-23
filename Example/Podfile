@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'StorageManager_Example' do
+  pod 'StorageManager', :path => '../'
+
+  target 'StorageManager_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
