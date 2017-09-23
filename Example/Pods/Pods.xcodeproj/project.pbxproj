@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E388FE9B3BEC2B320FB22DAE64B8B8E /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A6BAEB5F88B11F573F0607B98A30B9 /* ReplaceMe.swift */; };
-		36EF8D959A02E2106676C65D1805226C /* StorageManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DBBF5B9CFA5A4F07F76976DD982EE3 /* StorageManager-dummy.m */; };
-		5E978C1F7AD9D6B0DAB6C1D1E2CBEB91 /* StorageManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C4CAD331837E0475FF8E1498B427AA56 /* StorageManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7CE787998AC56E561128AAA6F3F624D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		1463AFBCABDCBC6B75C6257FCAB5A26E /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2BB2EE170544F1B35D0B9391738552 /* StorageManager.swift */; };
+		5E978C1F7AD9D6B0DAB6C1D1E2CBEB91 /* StorageManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE5E3567F63D35F3B8727BD52A67192D /* StorageManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7CE787998AC56E561128AAA6F3F624D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		863590E33A553694953A5A1A930D253B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		8FCD0D808110B45C26ED9814DEE8D42F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		924FE3ED5F34AB64162CC85741CD81B4 /* Pods-StorageManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 935227AA82C241CE40CAED24AE28AF1B /* Pods-StorageManager_Example-dummy.m */; };
+		92B2865E1F770DC700B1B5A6 /* SMError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B2865D1F770DC700B1B5A6 /* SMError.swift */; };
 		A3BC60B3F72B0FC8C88A0FA4455CEA1A /* Pods-StorageManager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D45D58BF65A0673989FF18DC70F68F1 /* Pods-StorageManager_Tests-dummy.m */; };
+		AD6F767E856394A6D8FD98521FC20641 /* StorageManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E95254B900A23C6934EB736CA18881 /* StorageManager-dummy.m */; };
 		C3B91B9C8C0944A7121049FBCAB29EAA /* Pods-StorageManager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F34C4F5EF41884E2871ABDA3DA86CBE4 /* Pods-StorageManager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D5A0294DF1C2C04DD363442D6BFEF637 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		EA3E9DE1863D1B133DBABB237C60C777 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		D5A0294DF1C2C04DD363442D6BFEF637 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		F907640D37A9EAC64F5C0EFE0580B364 /* Pods-StorageManager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B40D92489CE097CC50332C44B993926B /* Pods-StorageManager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -30,38 +32,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		007C5244778942010D329527503E7ADF /* StorageManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = StorageManager.xcconfig; sourceTree = "<group>"; };
-		2B217596C00B6055CA26D4BD072A265C /* StorageManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StorageManager-prefix.pch"; sourceTree = "<group>"; };
+		34ED3E93CD48F5120F4088FE0C699B61 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BCB3C331129C1D5850A4F2361300AE6 /* Pods-StorageManager_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StorageManager_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		3E4CC08A03F6A1856330DEBDD90965BD /* Pods-StorageManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StorageManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		40494F86DECA110890D78872B4A80AEF /* Pods-StorageManager_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StorageManager_Example-frameworks.sh"; sourceTree = "<group>"; };
 		49B7E29C7B294671190204334A018814 /* Pods-StorageManager_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StorageManager_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		50A6BAEB5F88B11F573F0607B98A30B9 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = StorageManager/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		61086556CD8B3CD5F7B7744AD5BBFFED /* Pods-StorageManager_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StorageManager_Example-resources.sh"; sourceTree = "<group>"; };
 		632F69F5A4E416B31D103C173BCBE626 /* Pods-StorageManager_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StorageManager_Tests-resources.sh"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		67E95254B900A23C6934EB736CA18881 /* StorageManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "StorageManager-dummy.m"; sourceTree = "<group>"; };
 		846268C83D7B4100F3799C8770817FAA /* Pods-StorageManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StorageManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		8C9B54E97043FE1BF2F5845BC2487B66 /* Pods-StorageManager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-StorageManager_Tests.modulemap"; sourceTree = "<group>"; };
+		8C9B54E97043FE1BF2F5845BC2487B66 /* Pods-StorageManager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-StorageManager_Tests.modulemap"; sourceTree = "<group>"; };
+		8DB288E7AA5155A791C1BF31422617AA /* StorageManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = StorageManager.modulemap; sourceTree = "<group>"; };
 		8E34C862FC84C33602E9D25104BAC5A4 /* Pods-StorageManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StorageManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		90C4469DF7C007A4A006754DA442A2AB /* StorageManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = StorageManager.framework; path = StorageManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90C4469DF7C007A4A006754DA442A2AB /* StorageManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StorageManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92B2865D1F770DC700B1B5A6 /* SMError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SMError.swift; path = StorageManager/Classes/SMError.swift; sourceTree = "<group>"; };
 		935227AA82C241CE40CAED24AE28AF1B /* Pods-StorageManager_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StorageManager_Example-dummy.m"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9A086FB690A49365E9D5B6EAA679FF9C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9D45D58BF65A0673989FF18DC70F68F1 /* Pods-StorageManager_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StorageManager_Tests-dummy.m"; sourceTree = "<group>"; };
 		A5E941B930557E634FD4782182203EE5 /* Pods-StorageManager_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StorageManager_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		A73EFE18DA1A9581D67963EA8CF107B2 /* Pods-StorageManager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-StorageManager_Example.modulemap"; sourceTree = "<group>"; };
+		A73EFE18DA1A9581D67963EA8CF107B2 /* Pods-StorageManager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-StorageManager_Example.modulemap"; sourceTree = "<group>"; };
 		B40A1744BDEBC2C1AA76E1A7B55B1217 /* Pods-StorageManager_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StorageManager_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B40D92489CE097CC50332C44B993926B /* Pods-StorageManager_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StorageManager_Tests-umbrella.h"; sourceTree = "<group>"; };
 		B4C6B00CEA62AC66E457962389E8AF97 /* Pods-StorageManager_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StorageManager_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		B5DBBF5B9CFA5A4F07F76976DD982EE3 /* StorageManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "StorageManager-dummy.m"; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		C148202B999D6C1D0162BF325FFD6EBD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C4CAD331837E0475FF8E1498B427AA56 /* StorageManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StorageManager-umbrella.h"; sourceTree = "<group>"; };
 		C7503EBC13066960E80114A775A16135 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D48F0BB41FD7AAB3B16ED9BAB8E44FD6 /* Pods_StorageManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_StorageManager_Example.framework; path = "Pods-StorageManager_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6C4D5EA6FAA0609D96F576B271E988B /* Pods_StorageManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_StorageManager_Tests.framework; path = "Pods-StorageManager_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA2BB2EE170544F1B35D0B9391738552 /* StorageManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StorageManager.swift; path = StorageManager/Classes/StorageManager.swift; sourceTree = "<group>"; };
+		D48F0BB41FD7AAB3B16ED9BAB8E44FD6 /* Pods_StorageManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StorageManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6C4D5EA6FAA0609D96F576B271E988B /* Pods_StorageManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StorageManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D9EE3314B38EFF28169B88E60852532D /* Pods-StorageManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StorageManager_Example.release.xcconfig"; sourceTree = "<group>"; };
-		EC1599CAC0653BEBC9F1B8B687CA0388 /* StorageManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = StorageManager.modulemap; sourceTree = "<group>"; };
+		E6B1D83661D184740383D82D9878979A /* StorageManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StorageManager-prefix.pch"; sourceTree = "<group>"; };
 		F34C4F5EF41884E2871ABDA3DA86CBE4 /* Pods-StorageManager_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StorageManager_Example-umbrella.h"; sourceTree = "<group>"; };
+		F8FA14AE677C6D4C949B1A0ED5D964A4 /* StorageManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = StorageManager.xcconfig; sourceTree = "<group>"; };
+		FE5E3567F63D35F3B8727BD52A67192D /* StorageManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StorageManager-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,19 +77,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		90332DC45231688F3133A4612FA8F114 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FCD0D808110B45C26ED9814DEE8D42F /* Foundation.framework in Frameworks */,
+				863590E33A553694953A5A1A930D253B /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BF1B6668E14EE35D856EB2A3158452E3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D5A0294DF1C2C04DD363442D6BFEF637 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E1F717546627E6E47B5236B577B0FFBC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EA3E9DE1863D1B133DBABB237C60C777 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +115,23 @@
 			path = "Target Support Files/Pods-StorageManager_Example";
 			sourceTree = "<group>";
 		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		4689F3E6375305DCE478CDAAD4581369 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,15 +141,15 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		5A247DB2C0B5EBADEEBE2FED6C07A337 /* Support Files */ = {
+		6A2A806AACE38CFAB39E64E65360D337 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9A086FB690A49365E9D5B6EAA679FF9C /* Info.plist */,
-				EC1599CAC0653BEBC9F1B8B687CA0388 /* StorageManager.modulemap */,
-				007C5244778942010D329527503E7ADF /* StorageManager.xcconfig */,
-				B5DBBF5B9CFA5A4F07F76976DD982EE3 /* StorageManager-dummy.m */,
-				2B217596C00B6055CA26D4BD072A265C /* StorageManager-prefix.pch */,
-				C4CAD331837E0475FF8E1498B427AA56 /* StorageManager-umbrella.h */,
+				34ED3E93CD48F5120F4088FE0C699B61 /* Info.plist */,
+				8DB288E7AA5155A791C1BF31422617AA /* StorageManager.modulemap */,
+				F8FA14AE677C6D4C949B1A0ED5D964A4 /* StorageManager.xcconfig */,
+				67E95254B900A23C6934EB736CA18881 /* StorageManager-dummy.m */,
+				E6B1D83661D184740383D82D9878979A /* StorageManager-prefix.pch */,
+				FE5E3567F63D35F3B8727BD52A67192D /* StorageManager-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/StorageManager";
@@ -138,10 +160,19 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				B963AA987C4F2CD8D2993C450356CEE6 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				F17C3C93277EC7DB7757592ABA441162 /* Products */,
 				4689F3E6375305DCE478CDAAD4581369 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		92B2865C1F770D9800B1B5A6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				92B2865D1F770DC700B1B5A6 /* SMError.swift */,
+				CA2BB2EE170544F1B35D0B9391738552 /* StorageManager.swift */,
+			);
+			name = Core;
 			sourceTree = "<group>";
 		};
 		9774D35A1744522330A4CEB8F52A3281 /* Pods-StorageManager_Tests */ = {
@@ -162,38 +193,22 @@
 			path = "Target Support Files/Pods-StorageManager_Tests";
 			sourceTree = "<group>";
 		};
-		B963AA987C4F2CD8D2993C450356CEE6 /* Development Pods */ = {
+		ABCB904CB55FC5C59E9FB1213A98625A /* StorageManager */ = {
 			isa = PBXGroup;
 			children = (
-				D247195692BAB73546D1DFC5B6862E25 /* StorageManager */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D247195692BAB73546D1DFC5B6862E25 /* StorageManager */ = {
-			isa = PBXGroup;
-			children = (
-				50A6BAEB5F88B11F573F0607B98A30B9 /* ReplaceMe.swift */,
-				5A247DB2C0B5EBADEEBE2FED6C07A337 /* Support Files */,
+				92B2865C1F770D9800B1B5A6 /* Core */,
+				6A2A806AACE38CFAB39E64E65360D337 /* Support Files */,
 			);
 			name = StorageManager;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+		B963AA987C4F2CD8D2993C450356CEE6 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+				ABCB904CB55FC5C59E9FB1213A98625A /* StorageManager */,
 			);
-			name = iOS;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		F17C3C93277EC7DB7757592ABA441162 /* Products */ = {
@@ -275,8 +290,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3221C99081855CF928B6A656F9685644 /* Build configuration list for PBXNativeTarget "StorageManager" */;
 			buildPhases = (
-				8F4EC0C84EF3943C51DF2A8EF99487A3 /* Sources */,
-				E1F717546627E6E47B5236B577B0FFBC /* Frameworks */,
+				DF995F5974DF95EE95FD209E528C9CB7 /* Sources */,
+				90332DC45231688F3133A4612FA8F114 /* Frameworks */,
 				5E87090DE0DB46EF66E2AF44EAC9B706 /* Headers */,
 			);
 			buildRules = (
@@ -296,6 +311,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					38C6FAEF20F58244FC5E9CC94C97A7EA = {
+						LastSwiftMigration = 0830;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -321,16 +341,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92B2865E1F770DC700B1B5A6 /* SMError.swift in Sources */,
 				924FE3ED5F34AB64162CC85741CD81B4 /* Pods-StorageManager_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8F4EC0C84EF3943C51DF2A8EF99487A3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0E388FE9B3BEC2B320FB22DAE64B8B8E /* ReplaceMe.swift in Sources */,
-				36EF8D959A02E2106676C65D1805226C /* StorageManager-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +351,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3BC60B3F72B0FC8C88A0FA4455CEA1A /* Pods-StorageManager_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF995F5974DF95EE95FD209E528C9CB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD6F767E856394A6D8FD98521FC20641 /* StorageManager-dummy.m in Sources */,
+				1463AFBCABDCBC6B75C6257FCAB5A26E /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +415,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D9EE3314B38EFF28169B88E60852532D /* Pods-StorageManager_Example.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -466,7 +488,7 @@
 		};
 		39BB2CD96DB2F4B479F0EC07D9A6F588 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 007C5244778942010D329527503E7ADF /* StorageManager.xcconfig */;
+			baseConfigurationReference = F8FA14AE677C6D4C949B1A0ED5D964A4 /* StorageManager.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -547,6 +569,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3E4CC08A03F6A1856330DEBDD90965BD /* Pods-StorageManager_Example.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -633,7 +656,7 @@
 		};
 		E1855DD8409F0F23A63D6F200532823F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 007C5244778942010D329527503E7ADF /* StorageManager.xcconfig */;
+			baseConfigurationReference = F8FA14AE677C6D4C949B1A0ED5D964A4 /* StorageManager.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

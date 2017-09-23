@@ -1,8 +1,8 @@
 {
   "name": "StorageManager",
   "version": "0.1.0",
-  "summary": "A short description of StorageManager.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "Safe and easy way to use FileManaer.",
+  "description": "FileManaer Api that handels Store, fetch, delete and update files on local storage desk.",
   "homepage": "https://github.com/iAmrSalman/StorageManager",
   "license": {
     "type": "MIT",
@@ -18,5 +18,6 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "StorageManager/Classes/**/*"
+  "source_files": "StorageManager/Classes/**/*",
+  "frameworks": "UIKit"
 }
