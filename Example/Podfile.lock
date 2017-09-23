@@ -1,0 +1,16 @@
+PODS:
+  - StorageManager (0.1.0)
+
+DEPENDENCIES:
+  - StorageManager (from `../`)
+
+EXTERNAL SOURCES:
+  StorageManager:
+    :path: ../
+
+SPEC CHECKSUMS:
+  StorageManager: 1fad1fbb7ebdc958523c4ec36f8b8ac4dd8c1e7c
+
+PODFILE CHECKSUM: 1530eefc97c63d5a540eae634da47910fb02b6f1
+
+COCOAPODS: 1.3.1

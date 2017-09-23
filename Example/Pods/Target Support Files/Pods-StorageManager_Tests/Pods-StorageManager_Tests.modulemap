@@ -1,0 +1,6 @@
+framework module Pods_StorageManager_Tests {
+  umbrella header "Pods-StorageManager_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

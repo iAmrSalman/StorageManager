@@ -1,0 +1,22 @@
+{
+  "name": "StorageManager",
+  "version": "0.1.0",
+  "summary": "A short description of StorageManager.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/iAmrSalman/StorageManager",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "iAmrSalman": "iamrsalman@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/iAmrSalman/StorageManager.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "StorageManager/Classes/**/*"
+}
