@@ -120,7 +120,7 @@ class StorageManager {
   
   //MARK: - Actions
   
-  func store(dictionary: [String: Any], fileName: String) throws {
+  func store(dictionary: [String: Any], in fileName: String) throws {
     do {
       try write(jsonText: try getJSONText(fromDictionary: dictionary), toUrl: try getUrl(forKey: fileName))
     } catch {
@@ -128,7 +128,7 @@ class StorageManager {
     }
   }
   
-  func store(array: [Any], fileName: String) throws {
+  func store(array: [Any], in fileName: String) throws {
     do {
       try write(jsonText: try getJSONText(fromArray: array), toUrl: try getUrl(forKey: fileName))
     } catch {
@@ -136,7 +136,7 @@ class StorageManager {
     }
   }
   
-  func store(data: Data, jsonType: JSONType, fileName: String) throws {
+  func store(data: Data, jsonType: JSONType, in fileName: String) throws {
     switch jsonType {
     case .array:
       do {
@@ -159,7 +159,7 @@ class StorageManager {
     do {
       var dictionary = try StorageManager.default.dictionaryValue(fileName)
       dictionary[key] = vlaue
-      try StorageManager.default.store(dictionary: dictionary, fileName: fileName)
+      try StorageManager.default.store(dictionary: dictionary, in: fileName)
     } catch {
       throw error
     }
@@ -178,7 +178,7 @@ class StorageManager {
     }
   }
   
-  func singleValue<T>(forKey key: String, fileName: String) throws -> T? {
+  func singleValue<T>(forKey key: String, in fileName: String) throws -> T? {
     do {
       guard let json = try getJSONDictinary(fileName) else {return nil}
       guard let value = json[key] as? T else { return nil }
@@ -189,7 +189,7 @@ class StorageManager {
     }
   }
   
-  func arrayValue<T>(forKey key: String, fileName: String) throws -> [T] {
+  func arrayValue<T>(forKey key: String, in fileName: String) throws -> [T] {
     var arrayValue = [T]()
     do {
       guard let json =  try getJSONDictinary(fileName) else {return arrayValue}
