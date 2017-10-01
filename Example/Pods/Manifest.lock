@@ -1,5 +1,5 @@
 PODS:
-  - StorageManager (0.1.0)
+  - StorageManager (0.1.1)
 
 DEPENDENCIES:
   - StorageManager (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  StorageManager: 387393134702cff64e894e39d00b1209653d3662
+  StorageManager: 17fc27d0ac55d7f8ebf8fbf39fd08fba9b64e418
 
 PODFILE CHECKSUM: 1530eefc97c63d5a540eae634da47910fb02b6f1
 

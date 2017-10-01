@@ -13,9 +13,9 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-- iOS 10.0+
-- Xcode 8.0+
-- Swift 3.0+
+- iOS 8.0+
+- Xcode 9.0+
+- Swift 4.0+
 
 ## Installation
 
@@ -26,9 +26,13 @@ it, simply add the following line to your Podfile:
 pod 'StorageManager'
 ```
 
+## Usage
+
+
+
 ## Author
 
-Amr Salman, iamrsalman@gmail.com
+iAmrSalman, iamrsalman@gmail.com
 
 ## License
 

@@ -1,8 +1,8 @@
 {
   "name": "StorageManager",
-  "version": "0.1.0",
-  "summary": "Safe and easy way to use FileManaer.",
-  "description": "FileManaer Api that handels Store, fetch, delete and update files on local storage desk.",
+  "version": "0.1.1",
+  "summary": "Safe and easy way to use FileManager.",
+  "description": "FileManager framework that handels Store, fetch, delete and update files in local storage.",
   "homepage": "https://github.com/iAmrSalman/StorageManager",
   "license": {
     "type": "MIT",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/iAmrSalman/StorageManager.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"
