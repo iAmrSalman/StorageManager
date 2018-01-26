@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/StorageManager.svg?style=flat)](http://cocoapods.org/pods/StorageManager)
 [![Platform](https://img.shields.io/cocoapods/p/StorageManager.svg?style=flat)](http://cocoapods.org/pods/StorageManager)
 
+![banner](https://user-images.githubusercontent.com/10261166/35454139-80ddfb16-02d5-11e8-90f6-3ca183590728.png)
+
 FileManager framework that handels Store, fetch, delete and update files in local storage.
 
 ## Example
