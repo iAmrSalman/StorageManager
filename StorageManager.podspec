@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
     FileManager framework that handels Store, fetch, delete and update files in local storage.
   DESC
-  s.homepage     = "https://github.com/iAmrSalman/StorageManager"
+  s.homepage     = "https://github.com/iAmrSalman/StorageManager/"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "Amr Salman" => "iamrsalman@gmail.com" }
   s.social_media_url   = ""
