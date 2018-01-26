@@ -1,5 +1,6 @@
 language: objective-c
 osx_image: xcode9.1
+xcode_project: StorageManager.xcodeproj
 branches:
   only:
     - master
