@@ -82,6 +82,71 @@ dependencies: [
 
 ## Usage
 
+### Store
+
+##### *Dictionary*: 
+
+```swift
+let exampleDictionary = ["foo": "bar", "x": 3, "pi": 3.1415, "names": ["Amr", "Salman"]]
+
+try! StorageManager.default.store(dictionary: exampleDictionary, in: "exampleDictionary")
+```
+
+##### *Array*:
+
+```swift
+let exampleArray = ["foo", "bar", "x", "y"]
+
+try! StorageManager.default.store(dictionary: exampleArray, in: "exampleArray")
+```
+
+##### *Data*:
+
+```swift
+let exampleData = Data()
+
+try! StorageManager.default.store(data: exampleData, jsonType: .array, in: "exampleData")
+```
+
+### Update
+
+```swift
+let newX = 5
+
+try! StorageManager.default.update(vlaue: newX, forKey: "x", in: "exampleDictionary")
+```
+
+### Delete
+
+```swift
+try! StorageManager.default.clear("exampleData")
+```
+
+### Fetch
+
+##### *Single value*
+
+```swift
+let x: Int = try! StorageManager.default.singleValue(forKey: "x", in: "exampleDictionary")
+```
+
+##### *Array*
+
+```swift
+let exampleArray: [String] = try! StorageManager.default.arrayValue("exampleArray")
+```
+
+##### *Array as value for key*
+
+```swift
+let names: [String] = try! StorageManager.default.arrayValue(forKey: "names", in: "exampleDictionary")
+```
+
+##### *Dictionary*
+
+```swift
+let exampleDictionary: [String: Any] = try! StorageManager.default.dictionaryValue("exampleDictionary")
+```
 
 
 ## Author
