@@ -80,6 +80,8 @@ open class StorageManager {
     
     //MARK: - Actions
     
+    //MARK: - CREATE
+    
     public func store(dictionary: [String: Any], in fileName: String) throws {
         try write(jsonText: try getJSONText(fromDictionary: dictionary), toUrl: try getUrl(forKey: fileName))
     }
@@ -100,15 +102,21 @@ open class StorageManager {
     }
     
     public func update<T>(vlaue: T, forKey key: String, `in` fileName: String) throws {
+    //MARK: - UPDATE
+    
         var dictionary = try StorageManager.default.dictionaryValue(fileName)
         dictionary[key] = vlaue
         try StorageManager.default.store(dictionary: dictionary, in: fileName)
     }
     
+    //MARK: - DELETE
+    
     public func clear(_ fileName: String) throws {
         guard let url = try getUrl(forKey: fileName) else { return }
         try FileManager.default.removeItem(at: url)
     }
+    
+    //MARK: - READ
     
     public func singleValue<T>(forKey key: String, in fileName: String) throws -> T? {
         guard let json = try getJSONDictinary(fileName) else {return nil}
