@@ -143,6 +143,12 @@ open class StorageManager {
         return arrayValue
     }
     
+    public func arrayValue<T: Hashable>(_ fileName: String) throws -> [T] {
+        guard let arrayValue =  try getJSONArray(fileName) as? [T]  else { return [] }
+        
+        return arrayValue
+    }
+
     public func dictionaryValue(_ fileName: String) throws -> [String: Any] {
         var dictionaryValue = [String: Any]()
         
