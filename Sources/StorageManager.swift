@@ -123,6 +123,7 @@ open class StorageManager {
         var localArray: [T] = try arrayValue(fileName)
         if let index = localArray.index(of: element) {
             localArray.remove(at: index)
+            try store(array: localArray, in: fileName)
         }
     }
     
