@@ -136,6 +136,12 @@ open class StorageManager {
     
     //MARK: - READ
     
+    public func singleValue<T>(name fileName: String) throws -> T? {
+        guard let localDictionary = try getJSONDictinary(fileName) else {return nil}
+        guard let value = localDictionary[fileName] as? T else { return nil }
+        
+        return value
+    }
     public func singleValue<T>(forKey key: String, in fileName: String) throws -> T? {
         guard let json = try getJSONDictinary(fileName) else {return nil}
         guard let value = json[key] as? T else { return nil }
