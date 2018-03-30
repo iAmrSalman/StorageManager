@@ -142,45 +142,37 @@ open class StorageManager {
         
         return value
     }
+    
     public func singleValue<T>(forKey key: String, in fileName: String) throws -> T? {
-        guard let json = try getJSONDictinary(fileName) else {return nil}
-        guard let value = json[key] as? T else { return nil }
+        guard let localDictionary = try getJSONDictinary(fileName) else {return nil}
+        guard let value = localDictionary[key] as? T else { return nil }
         
         return value
     }
     
     public func arrayValue<T: Hashable>(forKey key: String, in fileName: String) throws -> [T] {
-        var arrayValue = [T]()
-        guard let json =  try getJSONDictinary(fileName) else {return arrayValue}
-        guard let value = json[key] as? [T] else { return arrayValue }
+        guard let localDictionary =  try getJSONDictinary(fileName) else {return []}
+        guard let value = localDictionary[key] as? [T] else { return [] }
         
-        arrayValue = value
-        
-        return arrayValue
+        return value
     }
     
     public func arrayValue(in fileName: String) throws -> [[String: Any]] {
-        var arrayValue = [[String: Any]]()
-        guard let json =  try getJSONArray(fileName) as? [[String: Any]]  else { return arrayValue }
+        guard let localArray =  try getJSONArray(fileName) as? [[String: Any]]  else { return [] }
         
-        arrayValue = json
-        return arrayValue
+        return localArray
     }
     
     public func arrayValue<T: Hashable>(_ fileName: String) throws -> [T] {
-        guard let arrayValue =  try getJSONArray(fileName) as? [T]  else { return [] }
+        guard let localArray =  try getJSONArray(fileName) as? [T]  else { return [] }
         
-        return arrayValue
+        return localArray
     }
 
     public func dictionaryValue(_ fileName: String) throws -> [String: Any] {
-        var dictionaryValue = [String: Any]()
+        guard let localDictionary = try getJSONDictinary(fileName) else {return [:]}
         
-        guard let json = try getJSONDictinary(fileName) else {return dictionaryValue}
-        
-        dictionaryValue = json
-        
-        return dictionaryValue
+        return localDictionary
     }
     
 }
