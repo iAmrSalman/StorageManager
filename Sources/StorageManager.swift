@@ -90,23 +90,40 @@ open class StorageManager {
         try write(jsonText: try getJSONText(fromArray: array), toUrl: try getUrl(forKey: fileName))
     }
     
-    public func store(data: Data, jsonType: JSONType, in fileName: String) throws {
-        switch jsonType {
+    public func store(data: Data, type: JSONType, in fileName: String) throws {
+        switch type {
         case .array:
-            guard let array = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers) as? [Any] else { throw SMError.invalid(fileName, jsonType) }
+            guard let array = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers) as? [Any] else { throw SMError.invalid(fileName, type) }
             try write(jsonText: try getJSONText(fromArray: array), toUrl: try getUrl(forKey: fileName))
         case .dictionary:
-            guard let dictionary = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers) as? [String: Any] else { throw SMError.invalid(fileName, jsonType) }
+            guard let dictionary = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers) as? [String: Any] else { throw SMError.invalid(fileName, type) }
             try write(jsonText: try getJSONText(fromDictionary: dictionary), toUrl: try getUrl(forKey: fileName))
         }
     }
     
-    public func update<T>(vlaue: T, forKey key: String, `in` fileName: String) throws {
+    public func store<T: Hashable>(singleValue: T, in fileName: String)  throws {
+        try store(dictionary: [fileName: singleValue], in: fileName)
+    }
+    
     //MARK: - UPDATE
     
+    public func update<T: Hashable>(vlaue: T, forKey key: String, `in` fileName: String) throws {
         var dictionary = try StorageManager.default.dictionaryValue(fileName)
         dictionary[key] = vlaue
         try StorageManager.default.store(dictionary: dictionary, in: fileName)
+    }
+    
+    public func append<T: Hashable>(_ element: T, `in` fileName: String) throws {
+        var localArray: [T] = try arrayValue(fileName)
+        localArray.append(element)
+        try store(array: localArray, in: fileName)
+    }
+    
+    public func remove<T: Hashable>(_ element: T, from fileName: String) throws {
+        var localArray: [T] = try arrayValue(fileName)
+        if let index = localArray.index(of: element) {
+            localArray.remove(at: index)
+        }
     }
     
     //MARK: - DELETE
@@ -125,7 +142,7 @@ open class StorageManager {
         return value
     }
     
-    public func arrayValue<T>(forKey key: String, in fileName: String) throws -> [T] {
+    public func arrayValue<T: Hashable>(forKey key: String, in fileName: String) throws -> [T] {
         var arrayValue = [T]()
         guard let json =  try getJSONDictinary(fileName) else {return arrayValue}
         guard let value = json[key] as? [T] else { return arrayValue }
@@ -135,7 +152,7 @@ open class StorageManager {
         return arrayValue
     }
     
-    public func arrayValue(_ fileName: String) throws -> [[String: Any]] {
+    public func arrayValue(in fileName: String) throws -> [[String: Any]] {
         var arrayValue = [[String: Any]]()
         guard let json =  try getJSONArray(fileName) as? [[String: Any]]  else { return arrayValue }
         
