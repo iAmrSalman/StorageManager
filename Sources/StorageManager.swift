@@ -121,7 +121,7 @@ open class StorageManager {
     
     public func remove<T: Hashable>(_ element: T, from fileName: String) throws {
         var localArray: [T] = try arrayValue(fileName)
-        if let index = localArray.index(of: element) {
+        if let index = localArray.firstIndex(of: element) {
             localArray.remove(at: index)
             try store(array: localArray, in: fileName)
         }

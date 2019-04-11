@@ -9,15 +9,11 @@
 
 FileManager framework that handels Store, fetch, delete and update files in local storage.
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
 ## Requirements
 
 - iOS 8.0+ / macOS 10.10+ / tvOS 9.0+ / watchOS 2.0+
-- Xcode 9.0+
-- Swift 4.0+
+- Xcode 10.2+
+- Swift 5.0+
 
 ## Installation
 
