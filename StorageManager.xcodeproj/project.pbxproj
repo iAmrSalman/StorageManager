@@ -154,8 +154,7 @@
 		8933C7811EB5B7E0000D00A4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				8933C7841EB5B820000D00A4 /* StorageManager.swift */,
-				92B7281B201B8D1600E968A2 /* SMError.swift */,
+				928AA28B230BE33C004DC4A1 /* StorageManager */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -167,6 +166,15 @@
 			);
 			name = Tests;
 			path = Tests/StorageManagerTests;
+			sourceTree = "<group>";
+		};
+		928AA28B230BE33C004DC4A1 /* StorageManager */ = {
+			isa = PBXGroup;
+			children = (
+				8933C7841EB5B820000D00A4 /* StorageManager.swift */,
+				92B7281B201B8D1600E968A2 /* SMError.swift */,
+			);
+			path = StorageManager;
 			sourceTree = "<group>";
 		};
 		DD7502721C68FC1B006590AF /* Frameworks */ = {

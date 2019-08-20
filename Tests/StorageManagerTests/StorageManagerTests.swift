@@ -11,13 +11,16 @@ import XCTest
 import StorageManager
 
 class StorageManagerTests: XCTestCase {
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        //// XCTAssertEqual(StorageManager().text, "Hello, World!")
+    func testStoreDictionary() {
+        XCTAssertNoThrow(try StorageManager.default.store(dictionary: ["Txt": "This is a test"], in: "test"), "Storing dictionary into file test")
+    }
+    
+    func testReadTestFile() {
+        XCTAssertEqual(try StorageManager.default.dictionaryValue("test")["Txt"] as? String, "This is a test")
     }
     
     static var allTests = [
-        ("testExample", testExample),
+        ("testStoreDictionary", testStoreDictionary),
+        ("testReadTestFile", testReadTestFile)
     ]
 }
