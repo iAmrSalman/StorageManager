@@ -1,6 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = 'StorageManager'
   s.version      = '0.1.6'
+	s.swift_versions = '5.0'
   s.summary      = 'Safe and easy way to use FileManager.'
   s.description  = <<-DESC
     FileManager framework that handels Store, fetch, delete and update files in local storage.
