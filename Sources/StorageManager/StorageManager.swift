@@ -20,19 +20,24 @@ open class StorageManager {
     //MARK: - Helpers
     
     fileprivate func getUrl(forKey key: String) throws -> URL? {
-        guard let url = UserDefaults.standard.url(forKey: key) else {
-            return try getDataUrl(key)
+        guard let url = try getDataUrl(key) else {
+            return nil
         }
         
         return url
     }
     
     fileprivate func getDataUrl(_ key: String) throws -> URL? {
-        let document = try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
+        let document = try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
         let targetUrl = document.appendingPathComponent("\(key).json")
-        UserDefaults.standard.set(targetUrl, forKey: key)
-        
-        return targetUrl
+        if FileManager.default.fileExists(atPath: targetUrl.path) {
+            return targetUrl
+        } else {
+            if FileManager.default.createFile(atPath: targetUrl.path, contents: nil, attributes: nil) {
+                return targetUrl
+            }
+            return nil
+        }
     }
     
     fileprivate func getJSONDictinary(_ key: String) throws -> [String: Any]? {
